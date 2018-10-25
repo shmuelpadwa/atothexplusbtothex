@@ -42,3 +42,5 @@ while tries > 0:
   tries = tries - 1
 print(xlist)
 print(attlist)
+print("average x was " + str((sum(xlist)/len(xlist))))
+print("average number of attempts was " + str((sum(attlist)/len(attlist))))
