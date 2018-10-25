@@ -3,12 +3,12 @@ import random
 
 aprep = random.randint(0, 999999)
 adec = aprep / (1000000)
-aint = float(random.randint(0, 9))
+aint = float(random.randint(1, 9))
 a = aint + adec
 print ("a is " + str(a))
 bprep = random.randint(0, 999999)
 bdec = bprep / (1000000)
-bint = float(random.randint(0, 9))
+bint = float(random.randint(1, 9))
 b = bint + bdec
 print ("b is " + str(b))
 cprep = random.randint(0, 999999)
