@@ -1,19 +1,19 @@
 import math
 import random
 
-aprep = random.randint(0, 1000000)
+aprep = random.randint(0, 999999)
 apreplength = len(str(aprep))
 adec = aprep / (10**apreplength)
 aint = float(random.randint(0, 10))
 a = aint + adec
 print ("a is " + str(a))
-bprep = random.randint(0, 1000000)
+bprep = random.randint(0, 999999)
 bpreplength = len(str(bprep))
 bdec = bprep / (10**bpreplength)
 bint = float(random.randint(0, 10))
 b = bint + bdec
 print ("b is " + str(b))
-cprep = random.randint(0, 1000000)
+cprep = random.randint(0, 999999)
 cint = float(random.randint(0, 1000000))
 cpreplength = len(str(cprep))
 cdec = cprep / (10**cpreplength)
