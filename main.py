@@ -1,5 +1,5 @@
 import math
-#shmuel padwa
+#shmuel padwa, python 3
 #liam and alex gave me the problem 4^x+5^X=189
 #obvious answer x=3
 #they want a geenral solution, but closed form cant be found
