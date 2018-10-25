@@ -8,14 +8,14 @@ while tries > 0:
 
   aprep = random.randint(0, 999999)
   adec = aprep / (1000000)
-  aint = float(random.randint(0, 9))
+  aint = float(random.randint(1, 9))
   a = aint + adec
   bprep = random.randint(0, 999999)
   bdec = bprep / (1000000)
-  bint = float(random.randint(0, 9))
+  bint = float(random.randint(1, 9))
   b = bint + bdec
   cprep = random.randint(0, 999999)
-  cint = float(random.randint(0, 999999))
+  cint = float(random.randint(1, 999999))
   cdec = cprep / (1000000)
   c = cint + cdec
   if a > b:
