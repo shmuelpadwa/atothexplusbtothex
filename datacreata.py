@@ -1,5 +1,6 @@
 import math
 import random
+import statistics
 
 attlist = []
 xlist = []
@@ -44,3 +45,5 @@ print(xlist)
 print(attlist)
 print("average x was " + str((sum(xlist)/len(xlist))))
 print("average number of attempts was " + str((sum(attlist)/len(attlist))))
+print("standard deviation of x value was " + str(statistics.stdev(xlist)))
+print("standard deviation of attempts was " + str(statistics.stdev(attlist)))
