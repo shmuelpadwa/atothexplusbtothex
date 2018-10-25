@@ -15,7 +15,8 @@ elif b > a:
   val = float(math.log(float(c),float(b)))
 attempts = 0 
 error = 100.0
-while abs(error) > 0.05: #arbitrarily chosen, change to make more precise if you want.
+while abs(error) > 0.0005: #arbitrarily chosen, change to make more precise if you want.
+#the higher the value of c, and the greater the absolute difference between a and b, the closer to zero I would recommend this number
   print("val is " +str(val)) #prints the value after each round
   attempts = attempts + 1 #increments the number of tries
   currtotal = (float(a))**val + (float(b))**val 
