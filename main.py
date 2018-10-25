@@ -4,7 +4,7 @@ import math
 #obvious answer x=3
 #they want a geenral solution, but closed form cant be found
 #trancendental function
-#so we out here trying to find a decent algorithm
+#so we out here trying to make a decent algorithm
 a = input("give me the a in a^x+b^x=c")
 b = input("give me the b in a^x+b^x=c")
 c = input("give me the c in a^x+b^x=c")
