@@ -4,7 +4,8 @@ import statistics
 
 attlist = []
 xlist = []
-tries = 50
+tries = 5000
+abigger = 0
 while tries > 0:
 
   aprep = random.randint(0, 999999)
@@ -21,11 +22,12 @@ while tries > 0:
   c = cint + cdec
   if a > b:
     val = float(math.log(float(c),float(a)))
+    abigger = abigger + 1
   elif b > a:
     val = float(math.log(float(c),float(b)))
   attempts = 0 
   error = 100.0
-  while abs(error) > 0.005: #arbitrarily chosen,
+  while abs(error) > 0.0005: #arbitrarily chosen,
     attempts = attempts + 1 #increments the number of tries
     currtotal = (float(a))**val + (float(b))**val 
     percent = (100 * (currtotal-float(c))/float(c))
@@ -35,14 +37,17 @@ while tries > 0:
     elif currtotal < float(c):
       val = val * ((100 + abs(percent)/10)/100)
       error = percent
-    if attempts == 20: 
+    if attempts == 50: 
       break
 
   xlist.append(val)
   attlist.append(attempts)
   tries = tries - 1
+xlist.sort()
 print(xlist)
+attlist.sort()
 print(attlist)
+print("a was bigger than b " + str(abigger) + " times")
 print("average x was " + str((sum(xlist)/len(xlist))))
 print("average number of attempts was " + str((sum(attlist)/len(attlist))))
 print("standard deviation of x value was " + str(statistics.stdev(xlist)))
