@@ -33,4 +33,4 @@ while abs(error) > 0.05: #arbitrarily chosen, change to make more precise if you
   if attempts == 12: #feel free to change, just make sure not to brick your machine
     break
 
-print ("So the answer is that x = " + str(val) + " within an error of " + abs(str(error)) + " percent" )
+print ("So the answer is that x = " + str(val) + " within an error of " + str(abs(error)) + " percent" )
