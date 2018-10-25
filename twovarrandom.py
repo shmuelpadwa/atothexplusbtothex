@@ -12,7 +12,7 @@ bint = float(random.randint(1, 9))
 b = bint + bdec
 print ("b is " + str(b))
 cprep = random.randint(0, 999999)
-cint = float(random.randint(0, 999999))
+cint = float(random.randint(10, 999999))
 cdec = cprep / (1000000)
 c = cint + cdec
 print ("c is " + str(c))
